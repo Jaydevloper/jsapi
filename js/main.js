@@ -2,6 +2,13 @@ const elList = document.getElementById('list');
 const elForm = document.getElementById('form');
 const elSearch = document.getElementById('search');
 
+let countryData = [];
+fetch('https://restcountries.com/v3.1/all')
+.then(response =>response.json())
+.then(data =>{
+    countryData = data.slice(0,50)
+    render(countryData);
+})
 
 function create (name,className='',content=''){
     const element  = document.createElement(name);
@@ -41,7 +48,6 @@ elForm.addEventListener('submit',(e) => {
         const filteredCountries = countryData.filter(api => {
             return api.name.common.match(regax);
         })
-        console.log(filteredCountries);
         render(filteredCountries)
     }
 });
