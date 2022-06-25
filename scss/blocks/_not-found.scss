@@ -1,0 +1,30 @@
+.not-found{
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #f30000;
+}
+.not-found__error{
+    position: absolute;
+    left: calc(50% - 91px);
+    top: 336px;
+    z-index: -1;
+}
+.not-found__animation{
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    padding: 46px;
+    border: dashed;
+    top: 312px;
+    left: calc(50% - 106px);
+    animation: loading 6s ease infinite;
+}
+@keyframes loading {
+    from{
+        transform: rotate(800deg);
+    }
+ 
+    
+}

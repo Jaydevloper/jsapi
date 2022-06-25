@@ -27,6 +27,13 @@
         line-height: 20px;
         color: #fff;
     }
+    &--white{
+        background-color: #fff;
+        color: #000;
+        &::placeholder{
+            color: #000;
+        }
+    }
 }
 .site-main-search__select {
     padding: 18px 77px 18px 24px;
@@ -38,6 +45,10 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    &--white{
+        background-color: #fff;
+        color: #000;
+    }
 }
 
 @include breakpoint-down(700px){

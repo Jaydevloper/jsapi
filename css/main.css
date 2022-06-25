@@ -399,12 +399,22 @@ img {
   margin: -1px;
 }
 
+.Dark-mode--white {
+  background-color: #F2F2F2;
+  color: #000;
+}
+
 .site-header {
   padding-top: 23px;
   padding-bottom: 24px;
   background-color: #2B3844;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+}
+
+.site-header--white {
+  background-color: #fff;
+  color: #000;
 }
 
 .site-header__wrraper {
@@ -447,6 +457,10 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   content: '';
+}
+
+.site-header__wrraper-btn--white {
+  color: #000;
 }
 
 .site-main {
@@ -520,6 +534,27 @@ img {
   color: #fff;
 }
 
+.site-main-search__search--white {
+  background-color: #fff;
+  color: #000;
+}
+
+.site-main-search__search--white::-webkit-input-placeholder {
+  color: #000;
+}
+
+.site-main-search__search--white:-ms-input-placeholder {
+  color: #000;
+}
+
+.site-main-search__search--white::-ms-input-placeholder {
+  color: #000;
+}
+
+.site-main-search__search--white::placeholder {
+  color: #000;
+}
+
 .site-main-search__select {
   padding: 18px 77px 18px 24px;
   font-weight: 400;
@@ -530,6 +565,11 @@ img {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.site-main-search__select--white {
+  background-color: #fff;
+  color: #000;
 }
 
 @media only screen and (max-width: 700px) {
@@ -573,6 +613,15 @@ img {
   margin-right: 75px;
 }
 
+.site-main-list__item--white {
+  background-color: #fff;
+  color: #000;
+}
+
+.site-main-list__item-img {
+  border-radius: 5px;
+}
+
 .site-main-list__item-head {
   margin-top: 24px;
   margin-bottom: 16px;
@@ -591,5 +640,46 @@ img {
 
 .site-main-list__item-page:not(:last-child) {
   margin-bottom: 8px;
+}
+
+.not-found {
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #f30000;
+}
+
+.not-found__error {
+  position: absolute;
+  left: calc(50% - 91px);
+  top: 336px;
+  z-index: -1;
+}
+
+.not-found__animation {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  padding: 46px;
+  border: dashed;
+  top: 312px;
+  left: calc(50% - 106px);
+  -webkit-animation: loading 6s ease infinite;
+          animation: loading 6s ease infinite;
+}
+
+@-webkit-keyframes loading {
+  from {
+    -webkit-transform: rotate(800deg);
+            transform: rotate(800deg);
+  }
+}
+
+@keyframes loading {
+  from {
+    -webkit-transform: rotate(800deg);
+            transform: rotate(800deg);
+  }
 }
 /*# sourceMappingURL=main.css.map */

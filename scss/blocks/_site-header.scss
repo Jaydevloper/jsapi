@@ -3,6 +3,10 @@
     padding-bottom: 24px;
     background-color: #2B3844;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+    &--white{
+        background-color: #fff;
+        color: #000;
+    }
 }
 .site-header__wrraper {
     padding-left: 0;
@@ -34,5 +38,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         content: '';
+    }
+    &--white{
+        color: #000;
     }
 }
